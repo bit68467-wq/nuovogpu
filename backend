@@ -1,0 +1,8 @@
+fetch("https://TUO-BACKEND.onrender.com/auth/register", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    email: "ok" + Date.now() + "@test.com",
+    password: "123456"
+  })
+}).then(r => r.json()).then(console.log);
